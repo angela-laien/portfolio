@@ -1,0 +1,323 @@
+$smallScreen: 1000px;
+$mediumScreen: 1300px;
+$bigScreen: 3000px;
+$transition: all 0.2s ease;
+
+// Navbar.js
+.nav {
+  left: -20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+.hamburgerDropDown {
+  position: fixed;
+  left: 40px;
+  top: 40px;
+  width: 100px;
+  background-color: pink;
+  border: 1px solid bisque;
+}
+
+ul.hamburgerDropDown {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Position of the hamburger symbol */
+.navbar div {
+  top: -40px;
+  right: -220px;
+  position: relative;
+  display: inline-block;
+}
+
+.navSub {
+  margin: 2%;
+}
+
+// Home.js
+.App.newBackground {
+  transition: 1.5s;
+  background-image: url('./img/white.jpeg');
+}
+
+.App {
+  background-image: url('./img/black.jpeg');
+  background-color: white;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+.flip {
+  transform: rotateY(180deg);
+  .front {
+    opacity: 0;
+  }
+  .back {
+    opacity: 1;
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: fadein 2s;
+    @keyframes fadein {
+      from {
+        display: none;
+      }
+      to {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.front,
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-delay: 0.25s;
+  transition: 0;
+  backface-visibility: hidden;
+  background-color: white;
+}
+
+.back {
+  transform: rotateY(180deg);
+  opacity: 0;
+  display: none;
+  backface-visibility: visible;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  .back-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      text-align: center;
+      font-weight: 300;
+    }
+    .return-btn-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .return-btn {
+        margin-top: 25px;
+        padding: 0.25rem 0.4rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+          background: white;
+          color: black;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  transition: 1s;
+  transform-style: preserve-3d;
+  @media screen and (max-width: $bigScreen) {
+    width: 60%;
+  }
+  @media screen and (max-width: 700px) {
+    width: 80%;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    -webkit-animation: fadein 3s;
+    animation: fadein 2s;
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    h2 {
+      margin: 0.8rem 0;
+      font-weight: 600;
+    }
+    p {
+      margin: 0% 0% 40% 0%;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .background {
+      animation: pulse 2s ease infinite;
+    }
+
+    .swap-btn {
+      top: -30%;
+      width: 4.5rem;
+      height: 1.2rem;
+      text-align: center;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: black;
+      background-color: #4FD1C5;
+      background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+      border: none;
+      border-radius: 1000px;
+      box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+      transition: all 0.3s ease-in-out 0s;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      padding: 10px;
+    }
+
+    .swap-btn::before {
+      content: '';
+      top: -30%;
+      width: 4.5rem;
+      height: 1.2rem;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 1000px;
+      border: 6px solid #00FFCB;
+      box-shadow: 0 0 60px rgba(12, 24, 21, 0.64);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all .3s ease-in-out 0s;
+    }
+
+    .swap-btn, 
+    .background:hover, 
+    .swap-btn, 
+    .background:focus {
+    color: #313133;
+    transform: translateY(-6px);
+    }
+
+    .swap-btn:hover::before, 
+    .swap-btn:focus::before {
+    opacity: 1;
+    }
+
+    .swap-btn::after {
+      content: '';
+      width: 4.5rem;
+      height: 1.2rem;
+      border-radius: 1000px;
+      border: 6px solid #00FFCB;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: ring 1.5s infinite;
+    }
+
+    .swap-btn:hover::after, 
+    .swap-btn:focus::after {
+      animation: none;
+    }
+
+    @keyframes ring {
+      0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+      }
+      100% {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+      }
+    }
+  }
+
+  .profile-con {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-animation: fadein 2s;
+    animation: fadein 1s;
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  .profile-pic {
+    width: 60%;
+    margin-top: 2rem;
+    border-radius: 50%;
+    @media screen and (max-width: $smallScreen) {
+      width: 100%;
+    }
+  }
+}
+
+// Work.js
+.carousel-root {
+  background-color: grey;
+  margin: 0 1.2rem;
+  max-width: 50%;
+  @media screen and (max-width: 700px) {
+    max-width: 60%;
+  }
+  @media screen and (max-width: 500px) {
+    max-width: 80%;
+  }
+  p.carousel-status {
+    position: fixed;
+    top: 9%;
+    right: 48%;
+  }
+  img {
+    width: 100%;
+  }
+  .slide {
+    .legend {
+      bottom: 0;
+    }
+  }
+  .control-dots {
+    position: relative;
+    padding-inline-start: 0px;
+  }
+  .carousel-slider .control-arrow {
+    position: fixed;
+    @media screen and (max-width: $smallScreen) {
+      position: absolute;
+    }
+  }
+}
