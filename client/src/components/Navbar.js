@@ -34,15 +34,15 @@ class Nav extends Component {
     displayNavBar = () => {
         return (
             <div className='nav'>
-                <NavLink className='navSub' to='/' style={{ textDecoration:'none', color:'grey', margin: '0% 5%'}}
+                <NavLink className='navSub' to='/' style={{ textDecoration:'none', color:'white', margin: '0% 5%'}}
                 onClick={() => {
                     document.querySelector('.App').classList.toggle('newBackground');
                 }}
                 >Home</NavLink>
-                <NavLink className='navSub' to='/About' style={{ textDecoration:'none', color:'grey', margin: '0% 5%'}}>About</NavLink>
-                <NavLink className='navSub' to='/Work' style={{ textDecoration:'none', color:'grey', margin: '0% 5%'}}>Work</NavLink>
-                <NavLink className='navSub' to='/Skills' style={{ textDecoration:'none', color:'grey', margin: '0% 5%'}}>Skills</NavLink>
-                <NavLink className='navSub' to='/Contact' style={{ textDecoration:'none', color:'grey', margin: '0% 5%'}}>Contact</NavLink>
+                <NavLink className='navSub' to='/About' style={{ textDecoration:'none', color:'white', margin: '0% 5%'}}>About</NavLink>
+                <NavLink className='navSub' to='/Work' style={{ textDecoration:'none', color:'white', margin: '0% 5%'}}>Work</NavLink>
+                <NavLink className='navSub' to='/Skills' style={{ textDecoration:'none', color:'white', margin: '0% 5%'}}>Skills</NavLink>
+                <NavLink className='navSub' to='/Contact' style={{ textDecoration:'none', color:'white', margin: '0% 5%'}}>Contact</NavLink>
             </div>
         )
     }
