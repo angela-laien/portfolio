@@ -141,7 +141,7 @@ ul.hamburgerDropDown {
   transition: 1s;
   transform-style: preserve-3d;
   @media screen and (max-width: $bigScreen) {
-    width: 60%;
+    width: 40%;
   }
   @media screen and (max-width: 700px) {
     width: 80%;
