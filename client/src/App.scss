@@ -289,9 +289,10 @@ ul.hamburgerDropDown {
 
 // Work.js
 .carousel-root {
-  background-color: rgb(92, 76, 143);
+  background-color: grey;
   margin: 0 1.2rem;
   max-width: 50%;
+  border-radius: 8px;
   @media screen and (max-width: 700px) {
     max-width: 70%;
   }
@@ -327,6 +328,7 @@ ul.hamburgerDropDown {
 .png {
   width: 80%;
   max-width: 600px;
+  padding: 2% 0%;
   background-color: rgb(253, 235, 255);
   border-radius: 8px;
   .sec {
@@ -354,6 +356,17 @@ ul.hamburgerDropDown {
     line-height: 1.5;
     padding: 0% 3%;
   }
+
+  .cv {
+    align-items: center;
+    text-align: center;
+    .cv-title {
+      color: white;
+    }
+    .resume {
+      width: 10%;
+    }
+  }
   
   .interest {
     text-align: center;
@@ -365,6 +378,24 @@ ul.hamburgerDropDown {
     align-items: center;
     text-align: center;
     .icons {
+      width: 10%;
+      padding: 5%;
+    }
+  }
+}
+
+// Skills.js
+
+.skills {
+  background-color: black;
+  padding: 2% 0%;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  .skill-sec {
+    align-items: center;
+    text-align: center;
+    .logo {
       width: 10%;
       padding: 5%;
     }
