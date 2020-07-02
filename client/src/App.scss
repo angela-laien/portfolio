@@ -99,7 +99,7 @@ ul.hamburgerDropDown {
   opacity: 0;
   display: none;
   backface-visibility: visible;
-  background-color: rgb(58, 58, 58);
+  background-color: black;
   color: white;
   .back-content {
     display: flex;
@@ -242,8 +242,8 @@ ul.hamburgerDropDown {
       animation: ring 1.5s infinite;
     }
 
-    .swap-btn:hover::after, 
-    .swap-btn:focus::after {
+    .swap-btn, .background:hover::after, 
+    .swap-btn, .background:focus::after {
       animation: none;
     }
 
@@ -289,7 +289,7 @@ ul.hamburgerDropDown {
 
 // Work.js
 .carousel-root {
-  background-color: grey;
+  background-color: black;
   margin: 0 1.2rem;
   max-width: 50%;
   border-radius: 8px;
@@ -305,7 +305,10 @@ ul.hamburgerDropDown {
     right: 48%;
   }
   img {
-    width: 100%;
+    width: 90%;
+  }
+  img:hover {
+    width: 83%;
   }
   .slide {
     .legend {
@@ -325,21 +328,33 @@ ul.hamburgerDropDown {
 }
 
 // Contact.js
-.png {
+
+.contact {
   width: 80%;
   max-width: 600px;
-  padding: 2% 0%;
-  background-color: rgb(253, 235, 255);
+  background-color: black;
   border-radius: 8px;
-  .sec {
-    align-items: center;
-    text-align: center;
-    .icon {
-      width: 10%;
-      padding: 5%;
-    }
-    .icon:hover {
-      width: 8%;
+  align-items: center;
+  text-align: center;
+  padding: 0% 0% 5% 0%;
+  h4 {
+    color: white;
+  }
+  .png {
+    width: 60%;
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 20%;
+    .sec {
+      align-items: center;
+      text-align: center;
+      .icon {
+        width: 15%;
+        padding: 5%;
+      }
+      .icon:hover {
+        width: 12%;
+      }
     }
   }
 }
@@ -401,9 +416,13 @@ ul.hamburgerDropDown {
   .skill-sec {
     align-items: center;
     text-align: center;
+    display: flex;
+    padding-top: 4%;
     .logo {
-      width: 10%;
-      padding: 5%;
+      width: 40%;
+    }
+    h6 {
+      color: white;
     }
   }
 }
