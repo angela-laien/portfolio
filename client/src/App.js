@@ -14,22 +14,22 @@ function App() {
     <Router>
        <div className="App">
          <Switch>
-          <Route exact path='/'>
+          <Route exact path='/portfolio'>
             <Home />
           </Route>
-          <Route exact path='/Work'>
+          <Route exact path='/work'>
             <Nav />
             <Work />
           </Route>
-          <Route exact path='/About'>
+          <Route exact path='/about'>
             <Nav />
             <About />
           </Route>
-          <Route exact path='/Skills'>
+          <Route exact path='/skills'>
             <Nav />
             <Skills />
           </Route>
-          <Route exact path='/Contact'>
+          <Route exact path='/contact'>
             <Nav />
             <Contact />
           </Route>
