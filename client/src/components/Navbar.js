@@ -34,7 +34,7 @@ class Nav extends Component {
     displayNavBar = () => {
         return (
             <div className='nav'>
-                <NavLink className='navSub' to='/' style={{ textDecoration:'none', color:'white', margin: '0% 5%'}}
+                <NavLink className='navSub' to='/portfolio/' style={{ textDecoration:'none', color:'white', margin: '0% 5%'}}
                 onClick={() => {
                     document.querySelector('.App').classList.toggle('newBackground');
                 }}
@@ -50,7 +50,7 @@ class Nav extends Component {
     displayMobileMenu = () => {
         return (
             <ul className='hamburgerDropDown' style={{listStyleType:'none'}}>
-                <li className='nav-link'><NavLink to='/' style={{ textDecoration:'none', color:'black'}}
+                <li className='nav-link'><NavLink to='/portfolio/' style={{ textDecoration:'none', color:'black'}}
                 onClick={() => {
                     document.querySelector('.App').classList.toggle('newBackground');
                 }}
