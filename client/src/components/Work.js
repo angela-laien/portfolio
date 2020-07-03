@@ -6,18 +6,26 @@ const freeStyleKitchen = require('../img/FreeStyleKitchen.png');
 export default () => (
     <Carousel showThumbs={false} showStatus={true}>
         <div className='project'>
+            <a 
+                href='https://www.freestylekitchen.club/' 
+            >
+                <img className='image' 
+                src={freeStyleKitchen} 
+                alt='freeStyleKitchen' 
+                style={{
+                    padding: '0% 10% 0% 0%',
+                    textAlign: 'center'
+                }}
+                />
+            </a>
             <p className='kitchen'
                 style={{ 
                 color: 'white', 
-                fontWeight: 'bold' 
+                lineHeight: 2,
+                padding: '0% 10% 0% 0%',
+                textAlign: 'center'
                 }}
                 >
-                <a 
-                    href='https://www.freestylekitchen.club/' 
-                >
-                    <img src={freeStyleKitchen} alt='freeStyleKitchen' />
-                </a>
-                <br />
                 <a 
                     style={{ 
                     color: 'white' }}
@@ -34,7 +42,7 @@ export default () => (
                     Freestyle Kitchen Backend
                 </a>
                 <br />
-                A personal cookbook project featuring my weekend recipes. Utilized: Node, React, SQL, AWS Amplify, HTML5, CSS3
+                A personal cookbook project featuring my weekend recipes. <br />Utilized: Node, React, SQL, AWS Amplify, HTML5, CSS3
             </p>
         </div>
     </Carousel>

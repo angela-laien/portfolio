@@ -293,6 +293,8 @@ ul.hamburgerDropDown {
   margin: 0 1.2rem;
   max-width: 50%;
   border-radius: 8px;
+  text-align: center;
+  list-style: none outside none;
   @media screen and (max-width: 700px) {
     max-width: 70%;
   }
