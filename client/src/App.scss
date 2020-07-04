@@ -188,7 +188,7 @@ ul.hamburgerDropDown {
     }
 
     .swap-btn {
-      top: -30%;
+      top: -40%;
       width: 4.5rem;
       height: 1.2rem;
       text-align: center;
@@ -206,14 +206,11 @@ ul.hamburgerDropDown {
       outline: none;
       position: relative;
       padding: 10px;
-      @media screen and (max-width: 480px) {
-        top: -60%;
-      }
     }
 
     .swap-btn::before {
       content: '';
-      top: -30%;
+      top: -40%;
       width: 4.5rem;
       height: 1.2rem;
       text-align: center;
@@ -227,9 +224,6 @@ ul.hamburgerDropDown {
       transform: translate(-50%, -50%);
       opacity: 0;
       transition: all .3s ease-in-out 0s;
-      @media screen and (max-width: 480px) {
-        top: -60%;
-      }
     }
 
     .swap-btn, 
