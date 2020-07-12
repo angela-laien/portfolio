@@ -13,7 +13,7 @@ function About () {
         <div>
             <div className='newBackground'> </div>
             <div className='int'>
-                <p className='summary'>A full stack web development graduate who is seeking to find the opportunity to work in a fun and challenging working environment that will encourage her to improve and learn new and neccessary skills as well as be motivated by the company to do her best for the sake of helping herself and the company advancement in the software engineering industry.</p>
+                <p className='summary'>Hello, world! My name is Angela. I am a full stack web development graduate of Lambda School. The thing that matters most to me is unlocking human potential, so I am seeking an opportunity to work in a fun and challenging working environment that will encourage me to improve myself and learn new skills. I am also motivated to do my best for the sake of helping the company advancement in the software engineering industry.</p>
                 <div className='cv'>
                     <h2 className='cv-title'>CV</h2>
                     <a
