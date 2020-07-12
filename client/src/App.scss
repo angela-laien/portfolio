@@ -206,68 +206,8 @@ ul.hamburgerDropDown {
       outline: none;
       position: relative;
       padding: 10px;
-    }
-
-    .swap-btn::before {
-      content: '';
-      top: -30%;
-      width: 4.5rem;
-      height: 1.2rem;
-      text-align: center;
-      padding: 1rem;
-      border-radius: 1000px;
-      border: 6px solid #00FFCB;
-      box-shadow: 0 0 60px rgba(12, 24, 21, 0.64);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      transition: all .3s ease-in-out 0s;
-    }
-
-    .swap-btn, 
-    .background:hover, 
-    .swap-btn, 
-    .background:focus {
-    color: #313133;
-    transform: translateY(-6px);
-    }
-
-    .swap-btn:hover::before, 
-    .swap-btn:focus::before {
-    opacity: 1;
-    }
-
-    .swap-btn::after {
-      content: '';
-      width: 4.5rem;
-      height: 1.2rem;
-      border-radius: 1000px;
-      border: 6px solid #00FFCB;
-      position: absolute;
-      z-index: -1;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      animation: ring 1.5s infinite;
-    }
-
-    .swap-btn, .background:hover::after, 
-    .swap-btn, .background:focus::after {
-      animation: none;
-    }
-
-    @keyframes ring {
-      0% {
-        width: 30px;
-        height: 30px;
-        opacity: 1;
-      }
-      100% {
-        width: 150px;
-        height: 150px;
-        opacity: 0;
+      &:hover {
+        color: white;
       }
     }
   }
