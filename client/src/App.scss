@@ -295,43 +295,25 @@ ul.hamburgerDropDown {
 
 // Work.js
 .carousel-root {
-  background-color: black;
-  margin: 0 1.2rem;
   max-width: 50%;
-  border-radius: 8px;
-  text-align: center;
-  list-style: none outside none;
   @media screen and (max-width: 700px) {
     max-width: 70%;
   }
   @media screen and (max-width: 500px) {
     max-width: 80%;
   }
-  p.carousel-status {
-    position: fixed;
-    top: 9%;
-    right: 48%;
-  }
-  img {
-    width: 90%;
-  }
-  img:hover {
-    width: 83%;
-  }
-  .slide {
-    .legend {
-      bottom: 0;
+  a {
+    color: rgb(186,85,211);
+    font-weight: bold;
+    font-size: 0.88rem;
+    &:hover {
+      color: rgb(135,206,250);
     }
   }
-  .control-dots {
-    position: relative;
-    padding-inline-start: 0px;
-  }
-  .carousel-slider .control-arrow {
-    position: fixed;
-    @media screen and (max-width: $smallScreen) {
-      position: absolute;
-    }
+  p {
+    color: white;
+    font-size: 0.88rem;
+    padding: 0% 3% 5% 3%;
   }
 }
 
