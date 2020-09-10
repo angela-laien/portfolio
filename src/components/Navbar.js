@@ -35,7 +35,7 @@ class Nav extends Component {
         return (
             <div className='navbar'>
                 <nav>
-                    <NavLink className='navSub' to='/portfolio/' style={{ textDecoration:'none', color:'white', margin: '0% 5%'}}
+                    <NavLink className='navSub' to='/' style={{ textDecoration:'none', color:'white', margin: '0% 5%'}}
                     onClick={() => {
                         document.querySelector('.App').classList.toggle('newBackground');
                     }}
