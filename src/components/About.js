@@ -17,7 +17,7 @@ function About () {
                 <div className='cv'>
                     <h2 className='cv-title'>CV</h2>
                     <a
-                        href='https://drive.google.com/file/d/1c1B8Rovu9bt1aldkvORV944dsH3eThW2/view?usp=sharing'
+                        href='https://docs.google.com/document/d/19Bxt2_MngoiajVfPVsHlgepKhn1PYnaiVmruIBDnVaA/edit#heading=h.u9u1x7yarark'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
