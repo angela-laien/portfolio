@@ -216,7 +216,7 @@ ul.hamburgerDropDown {
       text-align: center;
       padding: 1rem;
       border-radius: 1000px;
-      border: 6px solid #00FFCB;
+      // border: 6px solid #00FFCB;
       box-shadow: 0 0 60px rgba(12, 24, 21, 0.64);
       position: absolute;
       top: 50%;
@@ -241,30 +241,30 @@ ul.hamburgerDropDown {
       width: 4.5rem;
       height: 1.2rem;
       border-radius: 1000px;
-      border: 6px solid #00FFCB;
+      // border: 6px solid #00FFCB;
       position: absolute;
-      z-index: -1;
+      // z-index: -1;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      animation: ring 1.5s infinite;
+      // transform: translate(-50%, -50%);
+      // animation: ring 1.5s infinite;
     }
-    .swap-btn, .background:hover::after, 
-    .swap-btn, .background:focus::after {
-      animation: none;
-    }
-    @keyframes ring {
-      0% {
-        width: 30px;
-        height: 30px;
-        opacity: 1;
-      }
-      100% {
-        width: 150px;
-        height: 150px;
-        opacity: 0;
-      }
-    }
+    // .swap-btn, .background:hover::after, 
+    // .swap-btn, .background:focus::after {
+    //   animation: none;
+    // }
+    // @keyframes ring {
+    //   0% {
+    //     width: 30px;
+    //     height: 30px;
+    //     opacity: 1;
+    //   }
+    //   100% {
+    //     width: 150px;
+    //     height: 150px;
+    //     opacity: 0;
+    //   }
+    // }
   }
 
   .profile-con {
