@@ -1,3 +1,4 @@
+$phoneScreen: 350px;
 $smallScreen: 1000px;
 $mediumScreen: 1300px;
 $bigScreen: 3000px;
@@ -206,6 +207,9 @@ ul.hamburgerDropDown {
       outline: none;
       position: relative;
       padding: 10px;
+      @media screen and (max-width: 400px) {
+        top: -15%;
+      }
     }
 
     .swap-btn::before {
