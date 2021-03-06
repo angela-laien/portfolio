@@ -9,6 +9,20 @@ const figma1st = require('../img/figma1st.png');
 export default () => (
     <Carousel showThumbs={false} showStatus={true}>
         <div>
+            <img src={figma1st} alt='figma1st'/>
+            <p className='project'>
+                <a href='https://www.figma.com/file/5XQyUfibeWZSfQJpUPC0N3/1st-Project'>
+                    UI Wizard
+                </a>
+                : Affordable UX design services for business. 
+                <br/>Utilized: Figma
+                <br/>
+                <a href='https://www.figma.com/file/5XQyUfibeWZSfQJpUPC0N3/1st-Project?node-id=0%3A1'>
+                    Figma File
+                </a>
+            </p>
+        </div>
+        <div>
             <img src={freeStyleKitchen} alt='freeStyleKitchen'/>
             <p className='project'>
                 <a href='https://www.freestylekitchen.club/'>
@@ -37,20 +51,6 @@ export default () => (
                 <br/>
                 <a href='https://github.com/angela-laien/Game_of_Life'>
                     GitHub Repo
-                </a>
-            </p>
-        </div>
-        <div>
-            <img src={figma1st} alt='figma1st'/>
-            <p className='project'>
-                <a href='https://www.figma.com/file/5XQyUfibeWZSfQJpUPC0N3/1st-Project'>
-                    UI Wizard
-                </a>
-                : Affordable UX design services for business. 
-                <br/>Utilized: Figma
-                <br/>
-                <a href='https://www.figma.com/file/5XQyUfibeWZSfQJpUPC0N3/1st-Project?node-id=0%3A1'>
-                    Figma File
                 </a>
             </p>
         </div>
